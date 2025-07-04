@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicklist - Lista de Compras</title>
+
+    
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="list-app">
+        <header>
+            <div class="desktop-only">
+                <img src="assets/logo.png" alt="logo Quicklist">
+            </div>
+            <div class="mobile-only">
+                <img src="assets/Light.png" alt="hora">
+    
+                <img src="assets/Status Icons.png" alt="">
+            </div>
+        </header>
+        
+        <main>
+            <div id="title">
+                <a href="#">
+                    <img src="assets/arrow-left-02-Stroke-Rounded.png" alt="">
+                    Voltar
+                </a>
+    
+                <h1>
+                    Compras da Semana
+                </h1>
+            </div>
+    
+            <form id="item-add">
+                <input type="text" id="new-item" placeholder="Adicione um novo item">
+                <button type="submit">
+                    Adicionar item
+                </button>
+            </form>
+            
+            <div id="buying-list">
+                <div class="item-list">
+                    <div class="check">
+                        <input type="checkbox" class="check-input">
+                        <p>Pão de forma</p>
+                    </div>
+                    <img src="assets/icons/icon delete.png" alt="">
+                </div>
+    
+                <div class="item-list">
+                    <div class="check">
+                        <input type="checkbox" class="check-input">
+                        <p>Café preto</p>
+                    </div>
+                    <img src="assets/icons/icon delete.png" alt="">
+                </div>
+    
+                <div class="item-list">
+                    <div class="check">
+                        <input type="checkbox" class="check-input">
+                        <p>Suco de laranja</p>
+                    </div>
+                    <img src="assets/icons/icon delete.png" alt="">
+                </div>
+    
+                <div class="item-list">
+                    <div class="check">
+                        <input type="checkbox" class="check-input">
+                        <p>Bolacha</p>
+                    </div>
+                    <img src="assets/icons/icon delete.png" alt="">
+                </div>
+            </div>
+        </main>
+    
+        <footer id="alert">
+            <div>
+                <img src="assets/icons/warning-circle-filled.png" alt="" class="desktop-only">
+                <p>O item foi removido da lista</p>
+            </div>
+            <img src="assets/icons/delete-small.png" alt="">
+        </footer>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
