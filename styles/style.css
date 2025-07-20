@@ -134,6 +134,11 @@ main {
             & img {
                 cursor: pointer;
             }
+
+            & .deleting {                
+                border: none;
+                background: inherit;
+            }
         }
     }
 }
